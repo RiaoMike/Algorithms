@@ -1,6 +1,4 @@
-#include<iostream>
-
-using namespace std;
+#include "Display.h"
 
 // input array: A
 // output array: B
@@ -54,13 +52,9 @@ int main(){
 	}
 
 	CountingSort(A, B, length);
-
-	cout << "the array after sort is as follows: " << endl;
-	for (int i = 0; i < length; ++i){
-		cout << B[i] << " " ;
-	}
-	cout << endl;
-
+	
+	Display(B, length);
+	
 	delete []A;
 	delete []B;
 	return 0;
