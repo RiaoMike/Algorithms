@@ -52,7 +52,6 @@ int main(){
 	}
 
 	CountingSort(A, B, length);
-	
 	Display(B, length);
 	
 	delete []A;

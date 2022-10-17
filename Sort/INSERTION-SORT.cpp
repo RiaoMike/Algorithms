@@ -23,7 +23,9 @@ int main(){
 		cin >> A[i];
 	}
 
-	InsertionSort(A, 7);
-	Display(A, 7);
+	InsertionSort(A, length);
+	Display(A, length);
+
+	delete []A;
 	return 0;
 }
