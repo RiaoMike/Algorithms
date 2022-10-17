@@ -1,0 +1,12 @@
+#Compiled object files
+*.o
+*.obj
+
+# ignore all
+*
+
+# don't ignore file with suffix
+!*.*
+
+# don't ignore dir
+!*/

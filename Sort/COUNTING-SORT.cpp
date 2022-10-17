@@ -40,17 +40,28 @@ void CountingSort(int A[], int B[], int n){
 
 int main(){
 	// testing
-	int A[] = {2, 5, 3, 0, 2, 3, 0, 3};
-	int length = sizeof(A)/sizeof(A[0]);
-	int *B = new int[length];
+	// int A[] = {2, 5, 3, 0, 2, 3, 0, 3};
+	// int length = sizeof(A)/sizeof(A[0]);
+	// int *B = new int[length];
+	int length;
+	cout << "Please enter the number you want to enter: " << endl;
+	cin >> length;
+	int* A = new int[length];
+	int* B = new int[length];
+	cout << "Please enter the array: " << endl;
+	for (int i = 0; i < length; ++i){
+		cin >> A[i];
+	}
 
 	CountingSort(A, B, length);
 
+	cout << "the array after sort is as follows: " << endl;
 	for (int i = 0; i < length; ++i){
 		cout << B[i] << " " ;
 	}
 	cout << endl;
 
+	delete []A;
 	delete []B;
 	return 0;
 }
